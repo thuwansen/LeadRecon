@@ -4,7 +4,7 @@ function normalise_nonlinear(fixPath,movePath,fixImg,moveImg,normMat)
 %        modulity or sequence.
 % function: move the moveImg to the fixImg
 % output: w_moveImg is the final  image for use
-% ex. normalise_nonlinear('./templates/','./TestData/','avg152T2.nii','anat.nii')
+% ex. normalise_nonlinear('./templates/','./TestData/','avg152T2.nii','anat.nii','norm.mat')
 % 2016.07.22 Wansen
 
 spm_normalise([fixPath,fixImg],[movePath,moveImg],normMat);
